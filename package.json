@@ -1,0 +1,66 @@
+{
+  "name": "storyblok_test_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@vue/composition-api": "^1.4.2",
+    "core-js": "^3.6.5",
+    "path": "^0.12.7",
+    "register-service-worker": "^1.7.1",
+    "serve-static": "^1.14.2",
+    "vue": "^3.0.0",
+    "vue-loader": "^15.9.8",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0",
+    "vuex-composition-helpers": "^2.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "^4.5.15",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "@vue/test-utils": "^2.0.0-rc.18",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "vue/no-multiple-template-root": "off"
+    }
+  },
+  "description": "A Vue app leveraging the [Gihub API](https://docs.github.com/en/rest), where users can view all Github Issues for the StoryBlok repositoty and can view details of a specific issues and see some details like, the username of the reporter, the issue number, th issue body, the issue status etc.",
+  "main": ".eslintrc.js",
+  "author": "henry okonkwo",
+  "license": "ISC"
+}
