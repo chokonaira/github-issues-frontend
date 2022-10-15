@@ -34,7 +34,7 @@ module.exports = {
         // eslint-disable-next-line no-param-reassign
         options.compilerOptions = {
           ...(options.compilerOptions || {}),
-          isCustomElement: (tag) => /^x-/.spec(tag),
+          isCustomElement: (tag) => /^x-/.test(tag),
         };
         return options;
       })
