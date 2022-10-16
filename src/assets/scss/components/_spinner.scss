@@ -1,0 +1,15 @@
+.spinner-wrapper {
+  @include flex-col;
+  justify-content: center;
+  height: 80vh;
+}
+
+.spinner-text {
+  font-size: $font-size-20;
+  color: $dark-grey !important;
+  margin-top: 10px;
+}
+
+.mdc-circular-progress__indeterminate-circle-graphic {
+  stroke: $dark-grey;
+}
