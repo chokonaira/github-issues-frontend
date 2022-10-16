@@ -3,7 +3,14 @@ import { mutations } from '@/store/mutations';
 import { actions } from '@/store/actions';
 
 export default createStore({
-  state: {},
+  state: {
+    isLoading: false,
+    isIssuesFetched: false,
+    isIssueFetched: false,
+    errors: null,
+    issues: [],
+    issue: {},
+  },
   mutations,
   actions,
 });
