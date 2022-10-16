@@ -1,0 +1,8 @@
+.router-link-active {
+  color: $white;
+  text-decoration: none !important;
+
+  &:hover {
+    color: $platinum;
+  }
+}

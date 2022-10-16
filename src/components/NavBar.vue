@@ -1,13 +1,11 @@
 <template>
   <div class="navbar-container">
-    <router-link class="navbar-link" to="/">
-      <h2 class="navbar-title">GitIssues</h2>
-      <img class='nav-logo' src="@/assets/images/github-logo-dark.png"
+    <router-link class="navbar-container__navbar-link" to="/">
+      <h2 class="navbar-container__navbar-title">GitIssues</h2>
+      <img class='navbar-container__nav-logo' src="@/assets/images/github-logo-dark.png"
             alt="github logo">
     </router-link>
-      <div class="navbar-search">
-        <h1 class="navbar-title">Issues Overview</h1>
-        </div>
+      <h1 class="navbar-container__navbar-title">Issues Overview</h1>
   </div>
 </template>
 <script>
