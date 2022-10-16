@@ -68,6 +68,18 @@ export default {
             url: 'https://api.github.com/users/chokonaira',
           },
         },
+        {
+          number: 100,
+          state: 'open',
+          title: 'Dependency is deprecated',
+          body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+          user: {
+            login: 'chokonaira',
+            avatar_url: 'https://avatars.githubusercontent.com/u/38280567?v=4',
+            type: 'User',
+            url: 'https://api.github.com/users/chokonaira',
+          },
+        },
       ],
     });
 

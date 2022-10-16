@@ -1,13 +1,13 @@
 <template>
   <div class="github-issues__container">
-      <div class="github-issues__list-container">
+    <div class="github-issues__list-container">
       <div class="github-issues__list-wrapper">
-        <div class="github-issues__list" >
+        <div class="github-issues__list">
           <IssueCard />
         </div>
         <!-- <Spinner v-else/> -->
       </div>
-      </div>
+    </div>
   </div>
 </template>
 
