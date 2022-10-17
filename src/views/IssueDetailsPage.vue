@@ -7,6 +7,14 @@
       <h2 class="github-issue__title">{{issue.title}}
         <span class="github-issue__number">#{{issue.number}}</span>
       </h2>
+      <div class="github-issue__open-wrapper">
+        <span class="github-issue__open">
+          <ui-icon class="github-issue__open-icon" :size='18' light>adjust</ui-icon>
+          open
+        </span>
+        <p><span class="github-issue__issues-query">{{issue.user.login}} </span>
+          commented on Aug 15</p>
+     </div>
       <ui-list-divider></ui-list-divider>
       <div class="github-issue__card-wrapper">
         <img :src='issue?.user.avatar_url' class="github-issue__reporter-image"
@@ -14,7 +22,7 @@
         <ui-card outlined class="github-issue__card">
           <div class="github-issue__subtitle timeline-comment--caret" :class="[$tt('subtitle2'),
           'issues-card__article-group-heading']">
-            <span class="issues-card__issues-query">{{issue.user.login}}</span> commented on Aug 15
+            <span class="github-issue__issues-query">{{issue.user.login}}</span> commented on Aug 15
           </div>
           <ui-list-divider></ui-list-divider>
           <div class="github-issue__body">

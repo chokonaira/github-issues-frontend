@@ -58,6 +58,39 @@
     color: #878f99;
   }
 
+  &__open-wrapper {
+    width: 100%;
+    @include flex-row;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &__open {
+    color: $white;
+    background: $green;
+    @include flex-row;
+    align-items: center;
+    width: 70px;
+    height: 20px;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  &__open-icon {
+    @include flex-row;
+    align-items: center;
+    word-break: break-all;
+    font-size: $font-size-16;
+  }
+
+  &__issues-query {
+    font-weight: bold;
+    font-style: italic;
+    font-size: $font-size-14;
+    padding-left: 6px;
+  }
+
   &__card {
     width: 88%;
     max-width: 100%;
