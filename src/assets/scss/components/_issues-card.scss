@@ -1,0 +1,72 @@
+.issues-card {
+  margin: 48px;
+  width: 970px;
+  max-width: 80%;
+  margin: 5px;
+  margin-bottom: 5%;
+
+  &__navbar-link {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+  }
+  
+  &__article-group-heading {
+    padding: 8px 16px;
+    font-size: $font-size-14;
+    background: $light-grey;
+  }
+
+  &__article {
+    @include flex-col;
+    justify-content: center;
+    // align-items: center;
+    text-decoration: none !important;
+    height: 60px;
+  }
+
+  &__article-icon {
+    @include flex-row;
+    align-items: center;
+    padding-left: 10px;
+    color: $dark-grey;
+    word-break: break-all;
+    font-size: $font-size-16;
+  }
+
+  &__article-title {
+    @include flex-row;
+    align-items: center;
+    padding-left: 6px;
+    color: $dark-grey;
+    word-break: break-all;
+    font-size: $font-size-16;
+  }
+
+  &__article-snippet {
+    margin: 0;
+    color: $dark-grey;
+    ;
+    font-size: $font-size-16;
+  }
+
+  &__issues-query {
+    font-weight: bold;
+    font-style: italic;
+    font-size: $font-size-14;
+  }
+
+  &__container {
+    width: 100%;
+    @include flex-row;
+    font-size: $font-size-16;
+    align-items: center;
+  }
+
+  &__issue-details {
+    @include flex-row;
+    align-items: center;
+    font-size: $font-size-12;
+    padding-left: 36px;
+  }
+}

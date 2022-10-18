@@ -1,5 +1,5 @@
 // A helper function that formats a string with accompanying html attributes
-// returns the string with format that can be translated by v-html.
+// returns the string with format that can be translated by v-html markdown.
 
 export default (issueBodyText) => {
   const linebreak = /(\r\n-|\n-|\r)/g;
