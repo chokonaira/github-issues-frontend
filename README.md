@@ -6,6 +6,9 @@ A Vue app leveraging the [Gihub API](https://docs.github.com/en/rest), where use
 
 [![Node.js CI](https://github.com/chokonaira/github-issues-frontend/actions/workflows/build.yml/badge.svg)](https://github.com/chokonaira/github-issues-frontend/actions/workflows/build.yml)
 
+### Heroku Frontend URL
+- https://henry-git-issues.herokuapp.com/
+
 #### Project setup
 - Run `yarn install` to install all dependencies
 - Run `yarn serve`
