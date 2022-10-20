@@ -10,8 +10,11 @@ A Vue app leveraging the [Gihub API](https://docs.github.com/en/rest), where use
 - https://henry-git-issues.herokuapp.com/
 
 #### Project setup
+- Start the backend rails server on `Port 3000`
 - Run `yarn install` to install all dependencies
+- Add `.env` in the project root directory and copy and paste the content of `.env.example`
 - Run `yarn serve`
+- The frontend app should be running and accessible via `http://localhost:3001/ `
 
 #### Run test
 - Run `yarn test:unit`

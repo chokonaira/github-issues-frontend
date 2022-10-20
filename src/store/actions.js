@@ -1,4 +1,3 @@
-import { allIssuesUrl, aIssueUrl } from '@/helpers/urlBuilder';
 import axiosConfig from '@/helpers/axiosConfig';
 
 // eslint-disable-next-line import/prefer-default-export
@@ -7,28 +6,22 @@ export const actions = {
     try {
       commit('SET_SPINNER');
 
-      const { data } = await axiosConfig(
-        allIssuesUrl('storyblok', 'storyblok'),
-      ).get();
+      const { data: { issues } } = await axiosConfig(`${process.env.VUE_APP_BASE_URL}.json`).get();
 
-      commit('ADD_ISSUES', data);
-      return data;
+      commit('ADD_ISSUES', issues);
     } catch (error) {
       commit('SET_ERRORS', error);
       return error;
     }
   },
 
-  async fetchIssue({ commit }, { issueNumber }) {
+  async fetchIssue({ commit }, { id }) {
     try {
       commit('SET_SPINNER');
 
-      const { data } = await axiosConfig(
-        aIssueUrl('storyblok', 'storyblok', issueNumber),
-      ).get();
+      const { data: { issue } } = await axiosConfig(`${process.env.VUE_APP_BASE_URL}/${id}.json`).get();
 
-      commit('ADD_ISSUE', data);
-      return data;
+      commit('ADD_ISSUE', issue);
     } catch (error) {
       commit('SET_ERRORS', error);
       return error;

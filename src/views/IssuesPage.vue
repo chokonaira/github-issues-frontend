@@ -31,7 +31,7 @@ export default {
 
     const isLoading = computed(() => store.state.isLoading);
     const isIssuesFetched = computed(() => store.state.isIssuesFetched);
-    const issues = computed(() => store.state.issues);
+    const issues = computed(() => store?.state.issues);
 
     return {
       isLoading,

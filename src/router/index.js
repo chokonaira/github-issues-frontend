@@ -8,7 +8,7 @@ const routes = [
     component: IssuesPage,
   },
   {
-    path: '/issue-details/:issueNumber/',
+    path: '/issues/:id/',
     name: 'IssueDetailsPage',
     component: () => import(/* webpackChunkName: "IssueDetailsPage" */ '../views/IssueDetailsPage.vue'),
     props: true,

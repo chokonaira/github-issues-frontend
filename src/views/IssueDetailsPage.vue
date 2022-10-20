@@ -17,8 +17,8 @@ import IssueCards from '@/components/IssueCards.vue';
 export default {
   components: { Spinner, IssueCards },
   props: {
-    issueNumber: {
-      type: Number,
+    id: {
+      type: String,
       required: true,
     },
   },
@@ -26,10 +26,10 @@ export default {
     const store = useStore();
 
     onMounted(async () => {
-      await store.dispatch('fetchIssue', { issueNumber: props.issueNumber });
+      await store.dispatch('fetchIssue', { id: props.id });
     });
 
-    store.dispatch('fetchIssue', { issueNumber: props.issueNumber });
+    store.dispatch('fetchIssue', { id: props.id });
 
     const isLoading = computed(() => store.state.isLoading);
     const isIssueFetched = computed(() => store.state.isIssueFetched);

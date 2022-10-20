@@ -8,7 +8,7 @@
   <ui-list-divider></ui-list-divider>
     <div v-for="(issue, index) in issues" :key="index">
       <router-link class="issues-card__navbar-link"
-      :to="{ name: 'IssueDetailsPage', params: { issueNumber: issue.number } }">
+      :to="{ name: 'IssueDetailsPage', params: { id: issue.id } }">
         <div v-ripple  class="issues-card__article">
           <div>
             <div class="issues-card__container">
