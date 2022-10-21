@@ -13,6 +13,7 @@ A Vue app leveraging the [Gihub API](https://docs.github.com/en/rest), where use
 - Start the backend rails server on `Port 3000`
 
 - This project uses `yarn`
+- Run `git clone https://github.com/chokonaira/github-issues-frontend.git`
 - Run `yarn install` from the root to install all dependencies
 - Add `.env` in the project root directory and copy and paste the content of `.env.example`
 - Run `yarn serve`
